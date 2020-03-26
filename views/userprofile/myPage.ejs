@@ -2,15 +2,17 @@
  else { %> <%- include("header.ejs") %> <% } %> 
 
 <div class = "container thecontainer">
-    <div class = "row justify-content-center py-3">
-        <h3 class="my-page-title">Mina sidor</h3>
+
+  <div class = "row justify-content-center py-3">
+        <!--sneaky layout-->
         
     </div>
 
     <div class ="row justify-content-center">
         <div class="col-sm-12 col-md-9 text-center">
-            <h5>Välkommen <%=""%> </h5>
-            <p>Här kan du lägga till och ändra din adress samt se favoritmarkerade produkter på din wishlist.</p>
+          <h3 class="my-page-title py-3">Mina sidor</h3>
+            <h5>Välkommen <%=user.name%>!</h5>
+            <p>Här kan du lägga till och ändra din adress. Du kan också se favoritmarkerade produkter på din wishlist.</p>
                 <h6>Mina Uppgifter</h6>
                 <form action= "/userinfo" method="post">
                    
@@ -51,7 +53,7 @@
   
         </div>
 
-        <div class="col-sm-12 col-md-3 text-center mypage-sidebar">
+        <div class="col-sm-12 col-md-3 pl-4 pt-2 border-left border-right sidebar-mypage">
             <h6><a href="/mypage">Mina uppgifter</a></h6>
             <h6><a href="/wishlist">Min Wishlist</a></h6>
             <h6><a href="/deleteuser">Avsluta medlemskap</a></h6>

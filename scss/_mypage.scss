@@ -1,8 +1,20 @@
-.mypage-sidebar {
+   
+   .sidebar-mypage {
 
-    a {
-        color: red;
+   a , a:link , a:visited {
+        color: rgb(143, 143, 143);
         text-decoration: none;
-        text-transform: uppercase;
+        font-weight: lighter;
       }
-}
+      
+      a:hover {
+        color: rgb(0, 0, 0);
+      }
+      
+      a:active , a:focus {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+      
+    
+    }

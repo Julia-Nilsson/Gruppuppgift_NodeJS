@@ -169,8 +169,9 @@ res.redirect("/login");
         
 //Mypage
 router.get("/mypage", verifyToken, async (req, res) => {
-    const user = await User.findOne({ email: req.body.email });
+    const user = await User.findOne({_id: req.user.user._id});
     res.render("userprofile/mypage", { token: req.cookies.jsonwebtoken, user, title: "Medlemssida - Lasses Lakrits" });
+    router.post({user})
 });
 
 //Logga ut

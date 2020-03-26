@@ -3,12 +3,13 @@
 
 <div class = "container thecontainer">
     <div class = "row justify-content-center py-3">
-        <h3 class="my-page-title">Mina sidor</h3>
+        
         
     </div>
 
 <div class ="row justify-content-center">
     <div class="col-sm-12 col-md-9 text-center">
+         <h3 class="my-page-title">Mina sidor</h3>
 <h5>Din Wishlist</h5>
         <ul>
             <% user.wishlist.forEach( (candy)=>{ %>
@@ -21,7 +22,7 @@
         </ul>
 </div>
     
-    <div class="col-sm-12 col-md-3 text-center mypage-sidebar">
+    <div class="col-sm-12 col-md-3 border-left border-right sidebar-mypage">
         <h6><a href="/mypage">Mina uppgifter</a></h6>
         <h6><a href="/wishlist">Min Wishlist</a></h6>
         <h6><a href="/deleteuser">Avsluta medlemskap</a></h6>
