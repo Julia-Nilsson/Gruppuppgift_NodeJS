@@ -111,6 +111,7 @@ router.route("/login")
 
                     res.render("userprofile/myPage", {user, title: "Medlemssida - Lasses Lakrits"});
                     console.log("cookie");
+                    
 
                 }
                 res.redirect("/login");
