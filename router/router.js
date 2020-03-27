@@ -21,11 +21,7 @@ router.route("/")
     .get(async (req, res) => {
         const item = await Candy.find();
 
-<<<<<<< HEAD
-        res.render("index", { token: req.cookies.jsonwebtoken, item, title: "Lasses Lakrits" })
-=======
         res.render("index", { token: req.cookies.jsonwebtoken, item, title: "Lasses Lakrits" });
->>>>>>> eeab2bf2d642c20c954af53662a423b04b75ecdf
     });
 
 // Router för att komma till sidan med alla produkter
